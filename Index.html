@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WA Business AI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      🤖 WA Business AI
+    </div>
+
+    <div class="card">
+
+      <h1>Welcome 👋</h1>
+
+      <p class="subtitle">
+        Your AI assistant for WhatsApp business
+      </p>
+
+      <div id="signupForm">
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Email address"
+        >
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+        >
+
+        <button onclick="signup()">
+          Create Account
+        </button>
+
+        <p>
+          Already have an account?
+          <span onclick="showLogin()">Login</span>
+        </p>
+
+      </div>
+
+
+      <div id="loginForm" style="display:none;">
+
+        <input
+          type="email"
+          id="loginEmail"
+          placeholder="Email address"
+        >
+
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Password"
+        >
+
+        <button onclick="login()">
+          Login
+        </button>
+
+        <p>
+          Don't have an account?
+          <span onclick="showSignup()">Create account</span>
+        </p>
+
+      </div>
+
+      <p id="message"></p>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
